@@ -24,24 +24,28 @@
         transform: translateY(0);
       }
     }
-    .social-icon:hover {
-      transform: scale(1.2);
+    .social-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      background-color: #6366F1;
+      color: white;
+    }
+    .hover-zoom:hover {
+      transform: scale(1.05);
       transition: transform 0.3s ease;
-      color: #6366F1;
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans scroll-smooth">
 
-  <!-- Encabezado -->
+  <!-- Encabezado moderno -->
   <header class="relative h-screen text-white flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
-      <img src="HD.jpg" alt="Fondo del Ministerio" class="w-full h-full object-cover filter brightness-75 blur-sm scale-105">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/40"></div>
+      <img src="HD.jpg" alt="Fondo del Ministerio" class="w-full h-full object-cover filter brightness-70 scale-105">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50"></div>
     </div>
-
     <div class="relative z-10 text-center px-4 fade-in">
-      <img src="fondo.jpg" alt="Johanny Altagracia Mejía" class="w-48 h-48 md:w-64 md:h-64 border-4 border-white shadow-2xl mx-auto mb-6 object-cover">
+      <img src="mi-foto.jpg" alt="Johanny Altagracia Mejía" class="w-48 h-48 md:w-64 md:h-64 border-4 border-white shadow-2xl mx-auto mb-6 object-cover">
       <h1 class="text-4xl md:text-6xl font-extrabold mb-2 drop-shadow-lg">Johanny Altagracia Mejía</h1>
       <p class="text-lg md:text-2xl mb-2">Pastora y profeta ungida</p>
       <p class="italic text-gray-200 mb-1">Escuela Profética de Liberación “Parados en la Brecha”</p>
@@ -76,14 +80,14 @@
     <h2 class="text-3xl font-bold text-indigo-700 mb-6">🤝 Mentoría</h2>
     <p class="mb-6 text-lg">Acompañamiento y formación personalizada en:</p>
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-gray-800">
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Profética</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Liberación</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Pastoral</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Evangelística</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería familiar</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería matrimonial</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería para solteros(as)</li>
-      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería para divorciados</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Profética</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Liberación</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Pastoral</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Evangelística</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Consejería familiar</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Consejería matrimonial</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Consejería para solteros(as)</li>
+      <li class="bg-white p-4 rounded-xl shadow hover-zoom">🔹 Consejería para divorciados</li>
     </ul>
   </section>
 
@@ -113,68 +117,20 @@
     <h2 class="text-3xl font-bold text-indigo-700 mb-6">💖 Donaciones</h2>
     <p class="mb-8 text-lg">Tu apoyo nos ayuda a continuar con la obra del Reino de Dios.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform">
+      <div class="bg-white p-6 rounded-xl shadow hover-zoom">
         <p class="font-semibold">Banco Popular</p>
         <p>Cuenta Corriente: <span class="text-indigo-700">123-456-789</span></p>
       </div>
-      <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform">
+      <div class="bg-white p-6 rounded-xl shadow hover-zoom">
         <p class="font-semibold">Banco BHD León</p>
         <p>Cuenta de Ahorro: <span class="text-indigo-700">987-654-321</span></p>
       </div>
     </div>
   </section>
 
- <!-- Redes sociales -->
-<section class="bg-indigo-50 max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8 text-center fade-in">
-  <h2 class="text-3xl font-bold text-indigo-700 mb-6">🌐 Redes Sociales</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-    <a href="https://www.tiktok.com/@pastoramejiaofical" target="_blank" class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform font-semibold text-indigo-700">TikTok</a>
-    <a href="https://www.instagram.com/pastormejiaofical" target="_blank" class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform font-semibold text-indigo-700">Instagram</a>
-    <a href="https://www.facebook.com/pastornejiaofical" target="_blank" class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform font-semibold text-indigo-700">Facebook</a>
-    <a href="https://www.youtube.com/@johannymejia-h5g" target="_blank" class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform font-semibold text-indigo-700">YouTube</a>
-  </div>
-</section>
-
-  <!-- Contacto -->
-  <section class="bg-white max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8 text-center fade-in">
-    <h2 class="text-3xl font-bold text-indigo-700 mb-6">📩 Contacto</h2>
-    <p class="mb-8 text-lg">Solicita más información sobre mentorías, talleres o capacitaciones.</p>
-    <form id="contact-form" class="grid grid-cols-1 gap-4 max-w-md mx-auto">
-      <input type="text" name="name" placeholder="Nombre" class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none" required>
-      <input type="email" name="email" placeholder="Correo electrónico" class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none" required>
-      <textarea name="message" placeholder="Tu mensaje" class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none" required></textarea>
-      <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition-colors font-semibold">Enviar</button>
-    </form>
-    <p id="status-msg" class="mt-4 text-green-600 font-semibold"></p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-indigo-800 text-white text-center py-8 mt-12">
-    <p>&copy; 2025 Johanny Altagracia Mejía | Ministerio Profético “Parados en la Brecha”</p>
-  </footer>
-
-  <!-- Script para enviar correo usando EmailJS -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("TU_USER_ID"); // Reemplaza con tu user ID de EmailJS
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(event){
-      event.preventDefault();
-      emailjs.sendForm('TU_SERVICE_ID','TU_TEMPLATE_ID', this)
-        .then(function(){
-          document.getElementById('status-msg').innerText = "Mensaje enviado correctamente!";
-          document.getElementById('contact-form').reset();
-        }, function(error){
-          document.getElementById('status-msg').innerText = "Error al enviar el mensaje.";
-          console.log(error);
-        });
-    });
-  </script>
-
-</body>
-</html>
-
-
-
+  <!-- Redes sociales -->
+  <section class="bg-indigo-50 max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8 text-center fade-in">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-6">🌐 Redes Sociales</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <a href="https://www.tiktok.com/@pastoramejiaofical" target="_blank" class="bg-white p-6 rounded-xl shadow social-card font-semibold text-indigo-700">TikTok</a>
+      <a href="https://www.instagram.com/pastormejiaofical" target="_blank" class="bg-white p-6 rounded-xl
