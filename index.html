@@ -6,31 +6,33 @@
   <title>Johanny Altagracia Mejía</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Portada con Fondo y Foto Personal -->
-  <header class="relative text-white text-center h-96">
-    <!-- Imagen de fondo -->
-    <img src="fondo.jpg" alt="Fondo del Ministerio" class="w-full h-full object-cover opacity-70">
+  <header class="relative h-screen text-white flex items-center justify-center overflow-hidden">
+    <!-- Imagen de fondo con efecto elegante -->
+    <div class="absolute inset-0">
+      <img src="fondo.jpg" alt="Fondo del Ministerio" class="w-full h-full object-cover filter brightness-75 blur-sm scale-105">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50"></div>
+    </div>
 
-    <!-- Contenedor de contenido superpuesto -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center px-4">
-      
+    <!-- Contenedor central -->
+    <div class="relative z-10 text-center px-4">
       <!-- Foto personal -->
-      <img src="mi-foto.jpg" alt="Johanny Altagracia Mejía" class="w-32 h-32 rounded-full border-4 border-white mb-4 object-cover">
+      <img src="mi-foto.jpg" alt="Johanny Altagracia Mejía" class="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-white shadow-2xl mx-auto mb-6 object-cover">
 
       <!-- Texto principal -->
-      <h1 class="text-3xl md:text-5xl font-bold">Johanny Altagracia Mejía</h1>
-      <p class="mt-2 text-lg md:text-2xl">Pastora y profeta ungida</p>
-      <p class="italic mt-2">Escuela Profética de Liberación “Parados en la Brecha”</p>
-      <p class="mt-1">✨ Fundado el 4 de octubre de 2021</p>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-2 drop-shadow-lg">Johanny Altagracia Mejía</h1>
+      <p class="text-lg md:text-2xl mb-2">Pastora y profeta ungida</p>
+      <p class="italic text-gray-200 mb-1">Escuela Profética de Liberación “Parados en la Brecha”</p>
+      <p class="text-yellow-300 text-lg">✨ Fundado el 4 de octubre de 2021</p>
     </div>
   </header>
 
   <!-- Biografía -->
-  <section class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">📖 Biografía</h2>
-    <p>
+  <section class="max-w-4xl mx-auto py-16 px-6 text-gray-900">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-6 border-b-2 border-indigo-200 inline-block pb-1">📖 Biografía</h2>
+    <p class="text-lg leading-relaxed">
       Johanny Altagracia Mejía es pastora y profeta, preparada y enviada conforme a Isaías 61:1.
       Con un llamado genuino al servicio, está al frente del Ministerio Profético de Liberación
       <span class="font-semibold">“Parados en la Brecha”</span>, levantando líderes y capacitando
@@ -39,86 +41,38 @@
   </section>
 
   <!-- Escuela Profética -->
-  <section class="bg-white max-w-4xl mx-auto py-12 px-6 shadow rounded-xl">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">🎓 Escuela Profética de Liberación</h2>
-    <p class="mb-4">Formando y capacitando líderes para el mañana. Ofrecemos capacitación en:</p>
-    <ul class="list-disc pl-6 space-y-2">
-      <li>📌 Compañía de profetas</li>
-      <li>📌 Guerra espiritual</li>
-      <li>📌 Consejería</li>
-      <li>📌 Cómo preparar un sermón</li>
+  <section class="bg-gradient-to-r from-indigo-50 to-white max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-6">🎓 Escuela Profética de Liberación</h2>
+    <p class="mb-6 text-lg">Formando y capacitando líderes para el mañana. Ofrecemos capacitación en:</p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+      <li class="flex items-center gap-2">📌 Compañía de profetas</li>
+      <li class="flex items-center gap-2">📌 Guerra espiritual</li>
+      <li class="flex items-center gap-2">📌 Consejería</li>
+      <li class="flex items-center gap-2">📌 Cómo preparar un sermón</li>
     </ul>
   </section>
 
   <!-- Mentoría -->
-  <section class="bg-gray-100 max-w-4xl mx-auto py-12 px-6 rounded-xl mt-6">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">🤝 Mentoría</h2>
-    <p class="mb-4">Acompañamiento y formación personalizada en:</p>
-    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-      <li>🔹 Profética</li>
-      <li>🔹 Liberación</li>
-      <li>🔹 Pastoral</li>
-      <li>🔹 Evangelística</li>
-      <li>🔹 Consejería familiar</li>
-      <li>🔹 Consejería matrimonial</li>
-      <li>🔹 Consejería para solteros(as)</li>
-      <li>🔹 Consejería para divorciados</li>
+  <section class="bg-indigo-50 max-w-4xl mx-auto py-16 px-8 shadow-lg rounded-3xl my-8">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-6">🤝 Mentoría</h2>
+    <p class="mb-6 text-lg">Acompañamiento y formación personalizada en:</p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-gray-800">
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Profética</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Liberación</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Pastoral</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Evangelística</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería familiar</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería matrimonial</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería para solteros(as)</li>
+      <li class="bg-white p-4 rounded-xl shadow hover:scale-105 transition-transform">🔹 Consejería para divorciados</li>
     </ul>
   </section>
 
   <!-- Talleres -->
-  <section class="bg-white max-w-4xl mx-auto py-12 px-6 shadow rounded-xl mt-6">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">🛠️ Talleres</h2>
-    <p class="mb-4">Espacios de crecimiento y sanidad integral:</p>
-    <ul class="list-disc pl-6 space-y-2">
-      <li>🌿 Sanidad interior</li>
-      <li>🌿 Sanidad mental</li>
-      <li>🌿 Sanidad emocional</li>
-      <li>🌿 Laboratorio de sueños</li>
-    </ul>
-  </section>
+  <section class="bg-white max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-6">🛠️ Talleres</h2>
+    <p class="mb-6 text-lg">Espaci
 
-  <!-- Libros -->
-  <section class="bg-gray-100 max-w-4xl mx-auto py-12 px-6 rounded-xl mt-6">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">📚 Libros</h2>
-    <p><span class="font-semibold">La oración efectiva de guerra espiritual</span><br>
-    Un recurso de edificación y fortaleza para la vida espiritual.</p>
-  </section>
 
-  <!-- Donaciones -->
-  <section class="bg-white max-w-4xl mx-auto py-12 px-6 text-center shadow rounded-xl mt-6">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">💖 Donaciones</h2>
-    <p class="mb-4">Tu apoyo nos ayuda a continuar con la obra del Reino de Dios.</p>
-    <div class="space-y-4">
-      <div class="bg-gray-100 p-4 rounded-lg">
-        <p class="font-semibold">Banco Popular</p>
-        <p>Cuenta Corriente: <span class="text-indigo-700">123-456-789</span></p>
-      </div>
-      <div class="bg-gray-100 p-4 rounded-lg">
-        <p class="font-semibold">Banco BHD León</p>
-        <p>Cuenta de Ahorro: <span class="text-indigo-700">987-654-321</span></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section class="bg-gray-100 max-w-4xl mx-auto py-12 px-6 text-center rounded-xl mt-6">
-    <h2 class="text-2xl font-bold text-indigo-700 mb-4">📩 Contacto</h2>
-    <p class="mb-4">Solicita más información sobre mentorías, talleres o capacitaciones.</p>
-    <form class="space-y-4 max-w-md mx-auto">
-      <input type="text" placeholder="Nombre" class="w-full border rounded-lg p-2">
-      <input type="email" placeholder="Correo electrónico" class="w-full border rounded-lg p-2">
-      <textarea placeholder="Tu mensaje" class="w-full border rounded-lg p-2"></textarea>
-      <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-indigo-800 text-white text-center py-6 mt-10">
-    <p>&copy; 2025 Johanny Altagracia Mejía | Ministerio Profético “Parados en la Brecha”</p>
-  </footer>
-
-</body>
-</html>
 
 
