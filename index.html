@@ -108,10 +108,17 @@
   <!-- Libros -->
   <section class="bg-gradient-to-r from-indigo-50 to-white max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8 fade-in-delay">
     <h2 class="text-3xl font-bold text-indigo-700 mb-6">📚 Libros</h2>
-    <p class="text-lg">
-      <span class="font-semibold">La oración efectiva de guerra espiritual</span><br>
-      Un recurso de edificación y fortaleza para la vida espiritual.
-    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-lg">
+          <span class="font-semibold">La oración efectiva de guerra espiritual</span><br>
+          Un recurso de edificación y fortaleza para la vida espiritual.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <img src="mi libro.png" alt="Libro La oración efectiva de guerra espiritual" class="w-64 h-auto rounded-xl shadow-lg">
+      </div>
+    </div>
   </section>
 
   <!-- Donaciones -->
@@ -120,12 +127,13 @@
     <p class="mb-8 text-lg">Tu apoyo nos ayuda a continuar con la obra del Reino de Dios.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
       <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform">
-        <p class="font-semibold">Banco Popular</p>
-        <p>Cuenta Corriente: <span class="text-indigo-700">123-456-789</span></p>
+        <p class="font-semibold">Banreservas República Dominicana</p>
+        <p>Cuenta de Ahorro: <span class="text-indigo-700">0160457792</span></p>
       </div>
       <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform">
-        <p class="font-semibold">Banco BHD León</p>
-        <p>Cuenta de Ahorro: <span class="text-indigo-700">987-654-321</span></p>
+        <p class="font-semibold">South State Bank (USA)</p>
+        <p>Cuenta: <span class="text-indigo-700">8010002450444</span></p>
+        <p>Ruta: <span class="text-indigo-700">063114030</span></p>
       </div>
     </div>
   </section>
@@ -144,7 +152,8 @@
   <!-- Contacto -->
   <section class="bg-white max-w-4xl mx-auto py-16 px-8 shadow-xl rounded-3xl my-8 text-center fade-in">
     <h2 class="text-3xl font-bold text-indigo-700 mb-6">📩 Contacto</h2>
-    <p class="mb-8 text-lg">Solicita más información sobre mentorías, talleres o capacitaciones.</p>
+    <p class="mb-4 text-lg">Solicita más información sobre mentorías, talleres o capacitaciones.</p>
+    <p class="mb-8 text-lg font-semibold">📞 Teléfono: <span class="text-indigo-700">809-764-9531</span></p>
     <form id="contact-form" class="grid grid-cols-1 gap-4 max-w-md mx-auto">
       <input type="text" name="name" placeholder="Nombre" class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none" required>
       <input type="email" name="email" placeholder="Correo electrónico" class="w-full border border-gray-300 rounded-xl p-3 focus:ring-2 focus:ring-indigo-400 focus:outline-none" required>
@@ -157,6 +166,7 @@
   <!-- Footer -->
   <footer class="bg-indigo-800 text-white text-center py-8 mt-12">
     <p>&copy; 2025 Johanny Altagracia Mejía | Ministerio Profético “Parados en la Brecha”</p>
+    <p class="mt-2">📞 Teléfono: 809-764-9531</p>
   </footer>
 
   <!-- Script para enviar correo usando EmailJS -->
@@ -168,4 +178,10 @@
 
     document.getElementById('contact-form').addEventListener('submit', function(event){
       event.preventDefault();
-      emailjs.sendForm('TU_SERVICE_ID','TU_TEMPLATE_ID
+      emailjs.sendForm('TU_SERVICE_ID','TU_TEMPLATE_ID')
+    });
+  </script>
+</body>
+</html>
+
+
